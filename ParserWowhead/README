@@ -1,0 +1,11 @@
+* Utilise activeperl pour fonctionner.
+
+** Les fichiers *_specific permettent de faire du parsing précis grâces au fichiers générer par 
+** le .bat dans le dossier prepare_txt_fields
+
+** PS : N'oublier par une vide ligne a la fin du fichier.
+
+** Les autres parser récupérer dans un intervalle définis par :
+** my $pageBegin = 1; // Id de début
+** my $pageEnd = 1; // Id de fin
+** Vous n'avez qu'a modifier c'est ligne
