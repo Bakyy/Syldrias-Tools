@@ -127,7 +127,7 @@ while ($ligne = <$questId> ) {
 			$sql{ 'OfferRewardText' } =~s/$sql{ 'GenderFemale' }&gt;/$sql{ 'GenderFemale' }/g ;
 		}
 		
-		$sql{ 'OfferRewardText' } =~ s/\<br \/\>/\$B/g : ;#Remplacement retour à la ligne
+		$sql{ 'OfferRewardText' } =~ s/\<br \/\>/\$B/g ;#Remplacement retour à la ligne
 		$sql{ 'OfferRewardText' } =~ s/'/\\'/g ;#Remplacement Guillement
 	}
 	
