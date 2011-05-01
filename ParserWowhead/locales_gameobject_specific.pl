@@ -68,7 +68,7 @@ while ($ligne = <$creatureId> ) {
 	{
 		$sql{ 'Name' } = $1;
 		print "Name: ".$sql{ 'Name' }."\n";
-		$sql{ 'Name' } =~ s/'/\'/g #Fix le caractère ' qui doit être \'
+		$sql{ 'Name' } =~ s/'/\\'/g #Fix le caractère ' qui doit être \'
 	}
 	
 	print "\n";

@@ -68,7 +68,7 @@ while ( $pageBegin <= $pageEnd ) {
 	{
 		$sql{ 'Name' } = $1;
 		print "Name: ".$sql{ 'Name' }."\n";
-		$sql{ 'Name' } =~ s/'/\'/g #Fix le caractère ' qui doit être \'
+		$sql{ 'Name' } =~ s/'/\\'/g #Fix le caractère ' qui doit être \'
 	}
 	
 	#SubName
@@ -77,7 +77,7 @@ while ( $pageBegin <= $pageEnd ) {
 	{
 		$sql{ 'SubName' } = $1;
 		print "SubName : ".$sql{ 'SubName' }."\n";
-		$sql{ 'SubName' } =~ s/'/\'/g
+		$sql{ 'SubName' } =~ s/'/\\'/g
 	}
 	
 	print "\n";
