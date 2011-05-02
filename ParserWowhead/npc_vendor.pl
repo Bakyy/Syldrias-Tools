@@ -68,6 +68,7 @@ while ($ligne = <$vendor> ) {
 		$page = $1;
 		
 		#Entete SQL
+		print npc_vendor_fr "UPDATE `creature_template` SET `npcflag`=`npcflag`|128 WHERE `entry` = ".$ligne."";
 		print npc_vendor_fr "INSERT IGNORE INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`) VALUES ";
 		while($page =~/"id":([0-9]*),"level":([0-9]*),(.*)/i )
 		{
